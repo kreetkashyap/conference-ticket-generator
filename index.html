@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Conference ticket generator</title>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- For Form! -->
+    <div class="form-container">
+    <img src="assets/images/logo-full.svg">
+    <h1>Your journey to coding conf 2025 starts here!</h1>
+    <p>Secure Your Spot at next year's biggest coding conference</p>
+    <div class="upload-avatar">
+          <label for="avatar"><img src="assets/images/icon-upload.svg" alt=""></label>
+          <input id="avatar" name="avatar" type="file" accept="image/png,image/jpeg" />
+          <p>Drag and drop or click to upload</p>
+         
+          <!-- <small class="hint">JPG or PNG only, max 1 MB</small> -->
+          <small class="error"></small>
+    </div>
+     <p id="avatar-instruction"> <img src="assets/images/icon-info.svg" >Upload your photo (JPG or PNG Max-Size: 500KB)</p>
+    <div class="upload-info">
+      <label for="name" type="text" >Full Name</label> <br>
+      <input type="text" name="name"> 
+      <br>
+      <label for="email" type="email" >Email Address</label> <br>
+      <input type="email" name="email">
+      <br>
+
+      <label for="username" type="text" >Github Username</label> <br>
+      <input type="text" name="username">
+    </div>
+  </div>
+  <button type="submit">Generate my ticket</button>
+
+  <!-- For ticket -->
+  <div class="ticket-container">
+    <h1>Hello </h1>
+    <p>hellon and bye</p>
+  </div>
+
+  </div>
+  
+<script src="script.js"></script>
+
+</body>
+</html>
