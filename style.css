@@ -1,0 +1,233 @@
+/* === GOOGLE FONT === */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background: radial-gradient(circle at top left, #14052c, #0b021b);
+  color: #fff;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 40px;
+  position: relative;
+}
+
+/* === MAIN CONTAINER === */
+.container {
+margin-left: auto;
+margin-right: auto;
+  max-width: 480px;
+  background: rgba(255, 255, 255, 0.03);
+  /* border-radius: 24px; */
+  padding: 40px 30px;
+  /* box-shadow: 0 0 40px rgba(255, 255, 255, 0.05); */
+  /* backdrop-filter: blur(10px); */
+  text-align: center;
+  /* border: 1px solid rgba(255, 255, 255, 0.08); */
+  position: relative;
+}
+
+/* === HEADER TEXT === */
+h1 {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+p {
+  color: #bcb4d5;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+/* === UPLOAD SECTION === */
+.upload-avatar {
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.03);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.upload-avatar:hover {
+  border-color: #ff6f61;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.upload-avatar label {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #ffae8a;
+}
+
+.upload-avatar input[type="file"] {
+  display: none;
+}
+
+.upload-avatar p {
+  font-size: 0.9rem;
+  color: #b8a8e2;
+}
+.full-logo-img{
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* === INFO SECTION === */
+.upload-info {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.upload-info label {
+  display: block;
+  font-size: 0.9rem;
+  color: #cfc6f2;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.upload-info input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.upload-info input:focus {
+  border-color: #ff6f61;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* === BUTTON === */
+button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px 0;
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #ff7f70;
+  transform: translateY(-1px);
+  box-shadow: 0 0 10px rgba(255, 111, 97, 0.5);
+}
+
+/* === TICKET CONTAINER (Hidden initially) === */
+.ticket-container {
+  display: none;
+  text-align: center;
+  padding: 30px 0;
+  animation: fadeIn 0.5s ease;
+}
+
+/* === SMALL ERROR OR HINT TEXT === */
+small {
+  color: #ff8080;
+  font-size: 0.8rem;
+  margin-top: 4px;
+  display: block;
+}
+
+/* === TRANSITION ANIMATION === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 20px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+.squiggly-bottom-right {
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 30%;
+ 
+}
+
+
+.squiggly-bottom-left {
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+} 
+
+
+
+
+.ticket-body {
+  position: relative;
+  margin-top: 20px;
+  width: 350px;
+  height: 180px;
+  background-image: url("assets/images/pattern-ticket.svg");
+  background-size: contain;      /* 👈 show full image */
+  background-repeat: no-repeat;
+  background-position: center;   /* keep it centered */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 15px;
+}
+
+.ticket-avatar {
+  width: 60px;
+  height: 60px;
+  /* border-radius: 50%; */
+  object-fit: cover;
+  /* border: 3px solid white; */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.ticket-info {
+  text-align: left;
+  color: #333;
+}
+
+.ticket-info p {
+  margin: 5px 0;
+}

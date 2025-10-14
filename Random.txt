@@ -1,0 +1,201 @@
+
+  CSS 
+
+
+ body {
+  font-family: 'Arial', sans-serif;
+  background-color: #2a1a7c; /* Dark Purple Background */
+  background-image: url('assets/images/background-desktop.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  position: relative;
+}
+
+.container img {
+  width: 180px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+/* ======== FORM CONTAINER ======== */
+.form-container {
+  background: rgba(255, 255, 255, 0.1);
+  /* backdrop-filter: blur(10px); */
+  /* border-radius: 20px; */
+  padding: 10px;
+  max-width: 420px;
+  height: 80%;
+  width: 80%;
+  /* box-shadow: 0 0 40px rgba(0, 0, 0, 0.3); */
+}
+
+
+.form-container h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.form-container p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+/* ======== UPLOAD AREA ======== */
+.upload-avatar {
+  border: 2px dashed rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.upload-avatar:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #ff6f61;
+}
+
+.upload-avatar input {
+  display: none;
+}
+
+.upload-avatar img {
+  width: 32px;
+  margin-bottom: 0.5rem;
+}
+
+.upload-avatar p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+#avatar-instruction {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: #bbb;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+#avatar-instruction img{
+    width: 15px;
+}
+
+/* ======== INPUT FIELDS ======== */
+.upload-info label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.upload-info input {
+  width: 80%;
+  
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  outline: none;
+}
+
+.upload-info input:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* ======== BUTTON ======== */
+.submit-btn {
+  background-color: #ff6f61; /* Orange button */
+  color: white;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 8px;
+  width: 60%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #ff3b2f;
+}
+
+/* ======== GENERATED TICKET ======== */
+.ticket-container {
+  display: none; /* hidden by default */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 400px;
+  margin-top: 2rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.ticket-container img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #ff6f61;
+}
+
+
+
+.submit-btn {
+  background-color: #ff6f61; /* Orange button */
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 20%;
+  cursor: pointer;
+}
+
+
+.squiggly-bottom-right {
+  background-image: url('assets/images/pattern-squiggly-line-top.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top-right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 30%;
+}
+
+
+.squiggly-bottom-left {
+  background-image: url('assets/images/pattern-squiggly-line-bottom-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom-left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+} */

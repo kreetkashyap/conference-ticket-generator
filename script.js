@@ -52,11 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Create ticket content
     ticketContainer.innerHTML = `
       <div class="ticket">
-        <img src="assets/images/logo-full.svg" class="ticket-logo" alt="Logo">
-        <h2>Congrats, ${name}!</h2>
-        <p>We've emailed your ticket to <b>${email}</b></p>
+        
+        <h2>Congrats, ${name}! Your ticket is ready.</h2>
+        <p>We've emailed your ticket to <b>${email}</b> and will send updates in the run up to the event.</p>
         <div class="ticket-body">
-          <img src="${uploadedAvatar || 'assets/images/icon-upload.svg'}" class="ticket-avatar" alt="Avatar">
+          <img src="${uploadedAvatar || 'assets/images/image-avatar.jpg'}" class="ticket-avatar" alt="Avatar">
           <div class="ticket-info">
             <p><strong>${name}</strong></p>
             <p>@${username}</p>

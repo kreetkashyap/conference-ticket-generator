@@ -9,11 +9,19 @@
   <title>Frontend Mentor | Conference ticket generator</title>
 </head>
 <body>
+  <!-- <img src="assets/images/pattern-lines.svg" class="lines">
+  <img src="assets/images/pattern-circle.svg" class="circle"> -->
+  <img src="assets/images/pattern-squiggly-line-top.svg" class="squiggly-bottom-right">
+  <img src="assets/images/pattern-squiggly-line-bottom-desktop.svg" class="squiggly-bottom-left">
+  <div class="full-logo-img">
+
+    <img class="full-logo"  src="assets/images/logo-full.svg"/>
+    
+  </div>
   <div class="container">
     
     <!-- For Form! -->
     <div class="form-container">
-    <img src="assets/images/logo-full.svg">
     <h1>Your journey to coding conf 2025 starts here!</h1>
     <p>Secure Your Spot at next year's biggest coding conference</p>
     <div class="upload-avatar">
@@ -37,14 +45,23 @@
       <input type="text" name="username">
     </div>
   </div>
-  <button type="submit">Generate my ticket</button>
-
+  <button class="submit-btn" type="submit">Generate my ticket</button>
+  
   <!-- For ticket -->
   <div class="ticket-container">
-    <h1>Hello </h1>
-    <p>hellon and bye</p>
+   <div class="ticket">
+        <h2>Congrats, ${name}! Your ticket is ready.</h2>
+        <p>We've emailed your ticket to <b>${email}</b> and will send updates in the run up to the event.</p>
+        <div class="ticket-body">
+          <img src="${uploadedAvatar || 'assets/images/image-avatar.jpg'}" class="ticket-avatar" alt="Avatar">
+          <div class="ticket-info">
+            <p><strong>${name}</strong></p>
+            <p>@${username}</p>
+          </div>
+        </div>
+      </div>
   </div>
-
+  
   </div>
   
 <script src="script.js"></script>
