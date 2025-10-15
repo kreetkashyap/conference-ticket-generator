@@ -194,9 +194,18 @@ small {
   height: 50%;
 } 
 
+.lines{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  opacity: 0.4;
+}
 
-
-
+.circle{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 .ticket-body {
   position: relative;
   margin-top: 20px;
