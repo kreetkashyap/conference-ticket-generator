@@ -52,16 +52,25 @@ document.addEventListener("DOMContentLoaded", () => {
     // Create ticket content
     ticketContainer.innerHTML = `
       <div class="ticket">
-        
-        <h2>Congrats, ${name}! Your ticket is ready.</h2>
-        <p>We've emailed your ticket to <b>${email}</b> and will send updates in the run up to the event.</p>
+        <h2>Congrats, <span class="highlight-name">${name}</span>!! Your ticket is ready.</h2>
+        <p>We've emailed your ticket to <span class="highlight-email">${email}</span> and will send updates in the run up to the event.</p>
         <div class="ticket-body">
+          <div class="ticket-top">
+            <img src="assets/images/logo-full.svg" class="ticket-logo">
+            <p>Jan 31, 2025 / Austin, TX</p>
+          </div>
+          <div class="ticket-bottom">
           <img src="${uploadedAvatar || 'assets/images/image-avatar.jpg'}" class="ticket-avatar" alt="Avatar">
           <div class="ticket-info">
             <p><strong>${name}</strong></p>
-            <p>@${username}</p>
+            <p>
+            <img src="assets/images/icon-github.svg" class="github-icon">
+            @${username}</p>
+          </div>  
           </div>
+          <span class="ticket-number">#01609</span>
         </div>
+        
       </div>
     `;
 
