@@ -9,51 +9,58 @@
   <title>Frontend Mentor | Conference ticket generator</title>
 </head>
 <body>
-  <img src="assets/images/pattern-lines.svg" class="lines"> 
-   <img src="assets/images/pattern-circle.svg" class="circle"> 
-  <img src="assets/images/pattern-squiggly-line-top.svg" class="squiggly-bottom-right">
-  <img src="assets/images/pattern-squiggly-line-bottom-desktop.svg" class="squiggly-bottom-left">
-  <div class="full-logo-img">
-
-    <img class="full-logo"  src="assets/images/logo-full.svg"/>
-    
+ <div class="background-patterns">
+    <img src="assets/images/pattern-lines.svg" class="lines"> 
+    <img src="assets/images/pattern-circle.svg" class="circle"> 
+    <img src="assets/images/pattern-squiggly-line-top.svg" class="squiggly-bottom-right">
+    <img src="assets/images/pattern-squiggly-line-bottom-desktop.svg" class="squiggly-bottom-left">
   </div>
+
+  <div class="full-logo-img">
+    <img class="full-logo" src="assets/images/logo-full.svg"/>
+  </div>
+
   <div class="container">
     
-    <!-- For Form! -->
+    <!-- Form Section -->
     <div class="form-container">
-    <h1>Your journey to coding conf 2025 starts here!</h1>
-    <p>Secure Your Spot at next year's biggest coding conference</p>
-    <div class="upload-avatar">
-          <label for="avatar"><img src="assets/images/icon-upload.svg" alt=""></label>
-          <input id="avatar" name="avatar" type="file" accept="image/png,image/jpeg" />
-          <p>Drag and drop or click to upload</p>
-         
-          <!-- <small class="hint">JPG or PNG only, max 1 MB</small> -->
-          <small class="error"></small>
-    </div>
-     <p id="avatar-instruction"> <img src="assets/images/icon-info.svg" >Upload your photo (JPG or PNG Max-Size: 500KB)</p>
-    <div class="upload-info">
-      <label for="name" type="text" >Full Name</label> <br>
-      <input type="text" name="name"> 
-      <br>
-      <label for="email" type="email" >Email Address</label> <br>
-      <input type="email" name="email">
-      <br>
+      <h1>Your journey to coding conf 2025 starts here!</h1>
+      <p>Secure Your Spot at next year's biggest coding conference</p>
 
-      <label for="username" type="text" >Github Username</label> <br>
-      <input type="text" name="username">
+      <!-- Avatar Upload -->
+      <div class="upload-avatar">
+        <label for="avatar"><img src="assets/images/icon-upload.svg" alt="Upload Avatar"></label>
+        <input id="avatar" name="avatar" type="file" accept="image/png,image/jpeg" aria-describedby="avatar-error"/>
+        <p>Drag and drop or click to upload</p>
+        <small id="avatar-error" class="error" aria-live="polite"></small>
+      </div>
+      <p id="avatar-instruction">
+        <img src="assets/images/icon-info.svg" alt="Info">Upload your photo (JPG or PNG Max-Size: 500KB)
+      </p>
+
+      <!-- Info Section -->
+      <div class="upload-info">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" required aria-describedby="name-error">
+        <small id="name-error" class="error" aria-live="polite"></small>
+
+        <label for="email">Email Address</label>
+        <input type="email" name="email" required aria-describedby="email-error">
+        <small id="email-error" class="error" aria-live="polite"></small>
+
+        <label for="username">Github Username</label>
+        <input type="text" name="username" required aria-describedby="username-error">
+        <small id="username-error" class="error" aria-live="polite"></small>
+      </div>
     </div>
+
+    <!-- Submit Button -->
+    <button class="submit-btn" type="submit">Generate my ticket</button>
+
+    <!-- Ticket Section -->
+    <div class="ticket-container"></div>
   </div>
-  <button class="submit-btn" type="submit">Generate my ticket</button>
-  
-  <!-- For ticket -->
-  <div class="ticket-container">
-   
-  </div>
-  
-  </div>
-  
+
 <script src="script.js"></script>
 
 </body>

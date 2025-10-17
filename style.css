@@ -1,5 +1,5 @@
 /* === GOOGLE FONT === */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
 
 /* === RESET === */
 * {
@@ -9,27 +9,22 @@
 }
 
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: "Inconsolata", sans-serif;
   background: radial-gradient(circle at top left, #14052c, #0b021b);
   color: #fff;
   min-height: 100vh;
   width: 100vw;
-  padding: 40px;
+  padding: 40px 20px;
   position: relative;
 }
 
 /* === MAIN CONTAINER === */
 .container {
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 480px;
-  /* background: rgba(255, 255, 255, 0.03); */
-  /* border-radius: 24px; */
   padding: 40px 30px;
-  /* box-shadow: 0 0 40px rgba(255, 255, 255, 0.05); */
-  /* backdrop-filter: blur(10px); */
   text-align: center;
-  /* border: 1px solid rgba(255, 255, 255, 0.08); */
   position: relative;
 }
 
@@ -44,7 +39,6 @@ h1 {
 
 p {
   color: #bcb4d5;
-  /* font-size: 0.95rem; */
   margin-bottom: 30px;
 }
 
@@ -80,9 +74,10 @@ p {
   font-size: 0.9rem;
   color: #b8a8e2;
 }
-.full-logo-img{
-    text-align: center;
-    margin-bottom: 12px;
+
+.full-logo-img {
+  text-align: center;
+  margin-bottom: 12px;
 }
 
 /* === INFO SECTION === */
@@ -161,51 +156,49 @@ small {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* === RESPONSIVE === */
-@media (max-width: 480px) {
-  .container {
-    padding: 30px 20px;
-  }
-  h1 {
-    font-size: 1.5rem;
-  }
-  p {
-    font-size: 0.9rem;
-  }
+/* === BACKGROUND PATTERNS === */
+.background-patterns {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .squiggly-bottom-right {
-  
   position: absolute;
   top: 0;
   right: 0;
   width: 30%;
   height: 30%;
- 
 }
 
-
 .squiggly-bottom-left {
-
   position: absolute;
   bottom: 0;
   left: 0;
   width: 50%;
   height: 50%;
-} 
+}
 
-.lines{
+.lines {
   position: absolute;
   width: 100%;
   top: 0;
   opacity: 0.4;
 }
 
-.circle{
+.circle {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 20%;
+  right: 30%;
+  opacity: 0.8;
+  width: 140px;
 }
+
+/* === TICKET BODY === */
 .ticket-body {
   position: relative;
   margin-top: 20px;
@@ -217,15 +210,10 @@ small {
   background-position: center;
   border-radius: 10px;
   display: flex;
-  flex-direction: column;  /* stack everything top-to-bottom */
+  flex-direction: column;
   justify-content: space-between;
   padding: 20px;
   box-sizing: border-box;
-}
-
-.highlight-name {
-  color: hsl(7, 88%, 67%); /* the orange accent */
-  font-weight: 700;
 }
 
 .highlight-name {
@@ -235,14 +223,14 @@ small {
   font-weight: 800;
 }
 
-.highlight-email{
+.highlight-email {
   color: hsl(7, 88%, 67%);
 }
-/* TOP SECTION: Logo + Date (stacked) */
+
 .ticket-top {
   display: flex;
-  flex-direction: column; /* logo on top, date below */
-  align-items: flex-start; /* align to left */
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .ticket-logo {
@@ -250,13 +238,6 @@ small {
   margin-bottom: 4px;
 }
 
-.ticket-date {
-  font-size: 10px;
-  color: #555;
-  margin: 0;
-}
-
-/* BOTTOM SECTION: Avatar + Info (side by side) */
 .ticket-bottom {
   display: flex;
   align-items: center;
@@ -284,18 +265,17 @@ small {
 }
 
 .github-icon {
-  width: 14px;         /* 👈 tiny size */
+  width: 14px;
   height: 14px;
   vertical-align: middle;
-  margin-right: 4px;   /* 👈 small gap before username */
+  margin-right: 4px;
 }
-
 
 .ticket-number {
   position: absolute;
-  right: 8px;               /* 👈 moves to right edge */
-  top: 50%;                 /* center vertically */
-  transform: translateY(-50%) rotate(90deg); /* rotate & center */
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
   transform-origin: center;
   font-size: 12px;
   letter-spacing: 2px;
@@ -303,4 +283,134 @@ small {
   opacity: 0.85;
   font-weight: 400;
   font-family: monospace;
+}
+
+
+label{
+  size: 20px;
+}
+/* === RESPONSIVE MEDIA QUERIES === */
+
+/* Mobile: 375px */
+@media (max-width: 375px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 15px 10px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .upload-avatar {
+    padding: 15px;
+  }
+
+  .upload-info input {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .ticket-body {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .ticket-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ticket-logo {
+    width: 80px;
+  }
+
+  .circle {
+    width: 80px;
+  }
+
+  .ticket-number {
+    font-size: 10px;
+  }
+}
+
+/* Tablet / Small desktop: 768px */
+@media (max-width: 768px) {
+  .container {
+    max-width: 95%;
+    padding: 25px 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .ticket-body {
+    width: 90%;
+  }
+
+  .ticket-avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ticket-logo {
+    width: 100px;
+  }
+
+  .circle {
+    width: 120px;
+  }
+}
+
+/* Desktop: 1440px */
+@media (min-width: 1440px) {
+  body {
+    padding: 60px 80px;
+  }
+
+  .container {
+    max-width: 600px;
+    padding: 50px 40px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .ticket-body {
+    width: 400px;
+    height: 200px;
+    padding: 25px;
+  }
+
+  .ticket-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .ticket-logo {
+    width: 130px;
+  }
+
+  .circle {
+    width: 180px;
+  }
 }

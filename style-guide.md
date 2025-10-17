@@ -10,10 +10,6 @@ The designs were created to the following widths:
 > 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
 
 ## Colors
-/*
-* Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=4c496b&c2=0d082c&gt=r&gd=dbr
-*/
 
 
 - Neutral 0: hsl(0, 0%, 100%)
