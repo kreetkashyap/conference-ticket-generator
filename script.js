@@ -10,7 +10,7 @@
       const nameError = document.getElementById("name-error");
       const emailError = document.getElementById("email-error");
       const usernameError = document.getElementById("username-error");
-      const avatarError = document.getElementById("avatar-error");
+      const avatarError = document.getElementById("avatar-instruction");
 
       let uploadedAvatar = "";
 
@@ -23,12 +23,14 @@
         const validTypes = ["image/png", "image/jpeg"];
         if (!validTypes.includes(file.type)) {
           avatarError.textContent = "Please upload a JPG or PNG file.";
+          avatarError.style.color = '#ff8080';
           avatarInput.value = "";
           return;
         }
 
         if (file.size > 500 * 1024) {
-          avatarError.textContent = "File size exceeds 500KB.";
+          avatarError.textContent = "File too large Please upload photo under 500KB.";
+          avatarError.style.color = '#ff8080';
           avatarInput.value = "";
           return;
         }
