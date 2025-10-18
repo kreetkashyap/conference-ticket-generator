@@ -97,3 +97,8 @@ Fully coded and developed by **Kritika Kashyap**
 
 - GitHub: [@kreetkashyap](https://github.com/kreetkashyap)  
 - Email: [kritikakashyap008@gmail.com](kritikakashyap008@gmail.com)
+
+
+## 📄 License
+
+This project is licensed under the [MIT License](./LICENSE).
