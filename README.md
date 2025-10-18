@@ -4,6 +4,18 @@
 
 A fully coded-from-scratch Conference Ticket Generator built as part of a [Frontend Mentor](https://www.frontendmentor.io/) challenge. This project showcases my frontend skills, including **HTML, CSS, JavaScript, accessibility, and responsive design**.
 
+
+
+---
+
+![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=black)
+![License: MIT](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+
+---
+
 💻 **Source Code:** [GitHub Repo](https://github.com/kreetkashyap/conference-ticket-generator)
 
 ---
