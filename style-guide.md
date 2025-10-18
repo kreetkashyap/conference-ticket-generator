@@ -34,4 +34,3 @@ The designs were created to the following widths:
 - Family: [Inconsolata](https://fonts.google.com/specimen/Inconsolata)
 - Weights: 400, 500, 700, 800
 
-> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. The design file for this challenge also includes a design system and tablet layout to help you build a more accurate solution faster.
